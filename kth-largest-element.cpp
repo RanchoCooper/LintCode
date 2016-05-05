@@ -26,6 +26,7 @@ public:
             if (nums[r] <= pivot)
                 r--;
         }
+        // last r is no less than pivot, excatly the r + 1 th largest element
         swap(nums[left], nums[r]);
         return r;
     }
