@@ -6,6 +6,8 @@
  * In array [9,3,2,4,8], the 3rd largest element is 4.
  * In array [1,2,3,4,5], the 1st largest element is 5, 2nd largest element is 4,
  * 3rd largest element is 3 and etc.
+ *
+ * Detail: https://leetcode.com/discuss/38336/4ms-c-solution-using-quicksort-and-max-heap
  */
 
 class Solution {
