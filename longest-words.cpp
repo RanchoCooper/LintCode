@@ -15,9 +15,9 @@ public:
         int maxlen = 0;
         vector<string> ans;
         for (int i = 0; i < dictionary.size(); ++i)
-            if (mexlen < dictionary[i].size()) maxlen = dictionary[i].size();
+            if (maxlen < dictionary[i].size()) maxlen = dictionary[i].size();
         for (int i = 0; i < dictionary.size(); ++i)
-            if (maxlen == dictinary[i].size()) ans.push_back(dictionary[i]);
+            if (maxlen == dictionary[i].size()) ans.push_back(dictionary[i]);
         return ans;
     }
 };
