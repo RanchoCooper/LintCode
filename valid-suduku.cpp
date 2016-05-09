@@ -26,7 +26,7 @@ public:
                     return false;
             }
             // check the row
-            fill(used, used + 9, ++i);  // reset used array
+            fill(used, used + 9, false);  // reset used array
             for (int j = 0; j < 9; ++j) {
                 if (!check(board[j][i], used))
                     return false;
