@@ -20,12 +20,12 @@ public:
     int partition(vector<int>& nums, int left, int right) {
         int pivot = nums[left];
         int l = left + 1, r = right;
-        while (l <= r) {
-            if (nums[l] < pivot && pivot < nums[r])
+        while (l <= r) {  //
+            if (nums[l] < pivot && pivot < nums[r])  // exchange and reduce distance of l and r
                 swap(nums[l++], nums[r--]);
-            if (pivot <= nums[l])
+            if (pivot <= nums[l])  // find an element big than pivot on left-side
                 l++;
-            if (nums[r] <= pivot)
+            if (nums[r] <= pivot)  // find an element small than pivot on right-side
                 r--;
         }
         // last r is no less than pivot, excatly the r + 1 th largest element
