@@ -46,3 +46,8 @@ public:
         }
     }
 };
+
+/*
+ * Reflection:
+ * 快排的partition算法
+ */
